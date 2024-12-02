@@ -80,6 +80,8 @@ Penulisan data dalam dataset ini sudah terbilang cukup konsisten tetapi masih ba
 Dari dataset di atas apabila dibuat menjadi sebuah visualisasi dan eksplorasi data sebelum dilakukan pra-pemrosesan data ternyata mendapatkan beberapa wawasan (insight) berikut ini.
 1. Terdapat beberapa film yang frekuensi kemunculannya lebih dari sekali, sehingga perlu adanya pengolahan lebih lanjut. Hal ini seperti yang terlihat pada gambar di bawah ini.
 
+![image alt](https://github.com/Suhardi100/Proyek-Akhir/blob/main/Visualisasi_Title.png?raw=true)
+
 2. Setelah dilakukan ekplorasi data lebih lanjut ternyata diperoleh wawasan bahwa judul film yang muncul lebih dari sekali beberapa kolom secara tidak menentu memiliki nilai yang berbeda-beda. Hal ini seperti yang terlihat dalam tabel di bawah ini.
 
 | No  | Title  | Year | Rated | Genre          | Runtime (Minutes) | Rating | Votes | Director            | Star 1                 | Star 2               | Star 3               | Star 4                     |
@@ -91,6 +93,13 @@ Dari dataset di atas apabila dibuat menjadi sebuah visualisasi dan eksplorasi da
 | 2190| Pulang | 2022 | R13+  | Drama          | 84 min            | 8.4    | 26    | Azhar Kinoi Lubis   | Ringgo Agus Rahman     | Ziva Magnolya        | Imelda Therinne      | Mark Natama                |
 
 3. Setelah dibuat visualisasi data mendapatkan wawasan bahwa kolom nilai dalam kolom-kolom atribut film, yakni Year, Rated, Genre, Runtime (Minutes), Rating, Votes, Director, Star 1, Star 2, Star3, dan Star 4 memiliki frekuensi kemunculan yang berbeda-beda seperti yang terlihat dalam gambar di bawah ini. Sehingga jumlah kemunculan yang lebih sekali ini akan menjadi sebuah faktor kemiripan nilai antara film satu dengan yang lainnya.
+
+![image alt](https://github.com/Suhardi100/Proyek-Akhir/blob/main/Visualisasi_Genre.png?raw=true)
+![image alt](https://github.com/Suhardi100/Proyek-Akhir/blob/main/Visualisasi_Director.png?raw=true)
+![image alt](https://github.com/Suhardi100/Proyek-Akhir/blob/main/Visualisasi_Star%201.png?raw=true)
+![image alt](https://github.com/Suhardi100/Proyek-Akhir/blob/main/Visualisasi_Star%202.png?raw=true)
+![image alt](https://github.com/Suhardi100/Proyek-Akhir/blob/main/Visualisasi_Star%203.png?raw=true)
+![image alt](https://github.com/Suhardi100/Proyek-Akhir/blob/main/Visualisasi_Star%204.png?raw=true)
 
 4. Setelah dilakukan eksplorasi dengan menampilkan statistik sederhana pada kolom-kolom numerik diketahui bahwa mayoritas film yang ada dalam dataset dirilis antara tahun 2012 dan 2023, dengan rating yang bervariasi antara 1.2 hingga 9.9. Rata-rata rating berada pada angka sekitar 6.43, yang menunjukkan bahwa film dalam dataset cenderung mendapatkan rating rata-rata yang cukup baik, meskipun ada beberapa film dengan rating yang lebih rendah.
 
