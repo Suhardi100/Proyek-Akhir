@@ -154,6 +154,15 @@ Pertama, data dikelompokkan berdasarkan kolom 'Title' menggunakan groupby('Title
 - Kolom yang harus dihapus adalah kolom "Star 3" dan "Star 4" karena banyak mengandung baris yang kosong. Hal ini penting dilakukan karena kolom ini banyak mengandung data kosong dan apabila kita menghapus barisnya maka akan banyak kehilangan data. Sehingga yang perlu dihapus kolomnya.
 - Baris yang harus dihapus adalah baris-baris yang masih mengandung nilai yang kosong pada beberapa kolom "Star 1" dan "Star 2". Hal ini penting untuk dilakukan karena kolom ini apabila kita hapus kolomnya juga maka akan kehilangan data penting berupa artis yang membintangi film tersebut, sehingga barisnya saja yang dihapus. Toh, tidak terlalu banyak baris yang harus dihapus untuk menghilangkan data yang kosong.   
 
+**6. Menerapkan TF-IDF dalam ekstrasi fitur**
+TF-IDF (Term Frequency-Inverse Document Frequency) adalah teknik statistik yang digunakan untuk mengevaluasi pentingnya sebuah kata dalam sebuah dokumen relatif terhadap kumpulan dokumen lainnya. Term Frequency (TF) mengukur seberapa sering sebuah kata muncul dalam dokumen, sedangkan Inverse Document Frequency (IDF) menurunkan bobot kata-kata umum yang sering muncul di seluruh dokumen tetapi tidak memiliki makna diskriminatif (misalnya, "dan," "adalah"). Dalam sistem rekomendasi, TF-IDF penting karena memungkinkan model memahami dan membandingkan dokumen atau item berdasarkan konten. 
+
+Langkah-langkah yang dilakukan untuk mengekstrasi fitur dengan TF-IDF dalam proyek ini adalah sebagai berikut ini.
+- Menggabungkan atribut dan menghitung TF-IDF. Mengabungkan atribut film (seperti genre, tahun, rating, dll.) menjadi satu daftar fitur kata unik, lalu menghitung skor TF-IDF untuk setiap kata agar mendapatkan representasi numerik berdasarkan frekuensinya dan tingkat kepentingannya. Ini membantu menangkap informasi penting dari semua atribut secara kolektif.
+- Mengubah teks menjadi matriks TF-IDF. Mengubah data teks yang digabungkan tadi menjadi matriks TF-IDF yang merepresentasikan hubungan antara kata-kata unik dan dokumen. Proses ini mengubah teks menjadi format numerik untuk digunakan dalam model.
+- Konversi ke matriks padat (dense). Mengubah matriks TF-IDF yang sparsed (banyak nilai nol) menjadi bentuk padat (dense matrix). Matriks padat lebih mudah digunakan dalam analisis lanjutan atau pemrosesan data lainnya.
+- Mengonversi ke DataFrame. Transformasi matriks TF-IDF menjadi DataFrame untuk memudahkan eksplorasi, kemudian tampilkan sampel kecil untuk melihat isi data. Langkah ini membantu memahami hasil transformasi TF-IDF secara visual.
+
 ## Modeling
 Model yang digunakan pada proyek ini adalah **Content Based Filtering**. Content Based Filtering adalah adalah teknik rekomendasi yang digunakan dalam sistem rekomendasi untuk menyarankan item kepada pengguna berdasarkan catatan interaksi terhadap atribut atau fitur dari suatu item oleh pengguna tersebut di masa lalu. 
 Tahahapan dalam pembuatan model ini adalah sebagai berikut.
